@@ -3,11 +3,11 @@ export const useGetData = (counter) => {
   const [data, setData] = useState({});
   const [error, setError] = useState(null);
   useEffect(() => {
-    const getDate = () => {
+    const getData = () => {
       const response = fetch(`https://picsum.photos/id/${counter}/200/200`);
       return response;
     };
-    getDate()
+    getData()
       .then((response) => {
         console.log(response);
         setData(response);
