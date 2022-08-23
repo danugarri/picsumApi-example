@@ -10,7 +10,7 @@ export const Watch = () => {
   const seconds = date.getSeconds();
 
   useEffect(() => {
-    setTimeout(() => setDate(new Date()));
+    setTimeout(() => setDate(new Date()),1000);
   }, [date]);
   return <div>{`${day}-${month}-${year}/ ${hour}:${minutes}:${seconds}`}</div>;
 };
