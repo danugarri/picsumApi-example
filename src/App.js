@@ -9,7 +9,7 @@ export default function App() {
     <div className="App">
       <Watch />
       <BasicModal setCounter={setCounter} counter={counter} />
-      {counter}
+      <p>Photo id: {counter}</p>
     </div>
   );
 }
